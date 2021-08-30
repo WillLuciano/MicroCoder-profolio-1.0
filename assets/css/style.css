@@ -7,21 +7,22 @@
  }
   /* custom properties */
  :root {
-   --ff-primary: 'SF Burlington Script', sans-serif;
-   --ff-secondary: 'Angelina', sans-serif;
+   --ff-primary: 'Open Sans', sans-serif;
+   --ff-secondary: arial, sans-serif;
 
    --fw-reg: 400;
-   --fw-bold: 900;
+   --fw-mid: 600;
+   --fw-bold: 800;
 
    --clr-light: #ecfaf0;
    --clr-dark: #30292c;
    --clr-accent: #26e0ff;
    --clr-extra: rgba(23, 66, 236, 0.42);
 
-   --fs-h1: 5rem;
-   --fs-h2: 3rem;
-   --fs-h3: 2rem;
-   --fs-body: 2rem;
+   --fs-h1: 3.5rem;
+   --fs-h2: 2.5rem;
+   --fs-h3: 1.5rem;
+   --fs-body: 1.7rem;
 
    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25) 0.125em 0.125em 0.25em  rgba(0,0,0,.15);
  }
@@ -70,6 +71,24 @@ strong { font-weight: var(--fw-bold) }
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
   border-radius: 40%;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.logo-btn {
+  display: flex;
+  padding: .5em 30em;
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+  text-align: right;
 }
 
 .btn:hover {
@@ -128,6 +147,32 @@ header {
 }
 .logo {
   max-width: 100px;
+}
+
+.logo h1 {
+  color: var(--clr-accent);
+  position: relative;
+  padding-left: 1.2em;
+  font-size: 10em;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0%{
+    color: var(--clr-light);
+    margin-bottom: -20px;
+  }
+  30%{
+    letter-spacing: 10px;
+    margin-bottom: -20px;
+  }
+}
+
+.logo h2 {
+  color: var(--clr-accent);
+  position: relative;
+  padding-left: 1.2em;
+  font-size: 4em;
 }
 
 /* navigation bar */
@@ -229,7 +274,7 @@ header {
   height: 50px;
   background: transparent;
   bottom: 10px;
-  left: 30px;
+  left: 15px;
 
   text-decoration: none;
   text-align: center;
@@ -253,7 +298,7 @@ header {
   box-shadow: var(--bs);
 }
 
-/* media for uder 600px */
+/* media for under 600px */
 @media (min-width: 600px) {
   .intro {
     display: grid;
@@ -264,11 +309,11 @@ header {
     grid-template-columns: min-content max-content;
   }
 
-
   .intro__img {
     grid-area: img;
     min-width: 250px;
     position: relative;
+    padding-right: 3em;
     z-index: 2;
   }
 
@@ -278,7 +323,7 @@ header {
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -1.5em;
+    left: 1em;
     width: calc(100% + 1.5em);
   }
 
@@ -344,7 +389,7 @@ header {
 
   .about-me {
     display: grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: .8fr 200px;
     grid-template-areas: 
       "title img"
       "subtitle img"
@@ -414,7 +459,13 @@ header {
   color: var(--clr-accent);
   text-align: center;
   padding: 2.5em 0;
-  font-size: var(--fs-h2);
+  font-size: var(--fs-h3);
+}
+
+.footer h2 {
+  color: var(--clr-light);
+  position: relative;
+  text-align: left;
 }
 
 .footer a {
@@ -423,7 +474,6 @@ header {
 }
 
 .footer__link {
-  
   font-weight: var(--fw-bold);
 }
 
