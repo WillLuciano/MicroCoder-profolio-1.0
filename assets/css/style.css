@@ -47,7 +47,6 @@ section {
 
 img {
   display: block;
-  border-radius: 50%;
   max-width: 100%;
 }
 
@@ -274,6 +273,7 @@ header {
 }
 
 .intro__img {
+  border-radius: 50%;
   box-shadow: var(--bs);
 }
 
@@ -375,12 +375,13 @@ header {
 
 .about-me__img {
   box-shadow: var(--bs);
+  border-radius: 10%;
 }
 
 .click {
   display: flex;
   padding-top: 2px;
-  padding-left: 22em;
+  padding-left: 25em;
   color: var(--clr-dark);
   text-decoration: none;
   font-size: 1rem;
@@ -394,7 +395,7 @@ header {
 
   .click {
     display: flex;
-    padding-left: 63.7em;
+    padding-left: 71.5em;
     color: var(--clr-dark);
     text-decoration: none;
     font-size: 1em;
@@ -519,4 +520,11 @@ header {
 
 .social-list__link {
   padding: .1em;
+}
+
+/* profolio styles */
+.profolio-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
 }
