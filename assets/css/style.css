@@ -52,11 +52,6 @@ img {
 
 strong { font-weight: var(--fw-bold) }
 
-:focus {
-  outline: 3px solid red;
-  outline-offset: 3px;
-}
-
 /* button */
 .btn {
   display: inline-block;
@@ -77,23 +72,6 @@ strong { font-weight: var(--fw-bold) }
   transform: scale(1.1);
 }
 
-.logo-btn {
-  display: flex;
-  padding: .5em 30em;
-  color: var(--clr-dark);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: var(--fw-bold);
-  transition: transform 200ms ease-in-out;
-  text-align: right;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-}
 
 /* typography */
 h1,
@@ -152,8 +130,9 @@ header {
 .logo h1 {
   color: var(--clr-accent);
   position: relative;
+  padding-top: 1em;
   padding-left: 1.2em;
-  font-size: 10em;
+  font-size: 3em;
   animation: text 3s 1;
 }
 
@@ -171,8 +150,8 @@ header {
 .logo h2 {
   color: var(--clr-accent);
   position: relative;
-  padding-left: 1.2em;
-  font-size: 4em;
+  padding-left: 1em;
+  font-size: 2em;
 }
 
 /* navigation bar */
@@ -261,7 +240,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  background: var(--clr-dark);
+  background: var(--clr-accent);
 }
 
 .hamburger::before { top: 6px;}
@@ -300,6 +279,7 @@ header {
 
 /* media for under 600px */
 @media (min-width: 600px) {
+  
   .intro {
     display: grid;
     width: min-content;
@@ -364,6 +344,17 @@ header {
 }
 
 @media (min-width: 800px) {
+
+  .logo h1 {
+    padding-top: 0;
+    font-size: 10em;
+  }
+
+  .logo h2 {
+    padding-left: 4em;
+    font-size: 7em;
+  }
+  
   .services {
     display: flex;
     max-width: 1000px;
@@ -374,6 +365,7 @@ header {
   .service + .service {
     margin-left: 2em;
   }
+
 }
 
 .about-me {
@@ -385,7 +377,31 @@ header {
   box-shadow: var(--bs);
 }
 
+.click {
+  display: flex;
+  padding-top: 2px;
+  padding-left: 22em;
+  color: var(--clr-dark);
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  text-align: top;
+}
+
 @media (min-width: 600px) {
+
+  .click {
+    display: flex;
+    padding-left: 63.7em;
+    color: var(--clr-dark);
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+  }
 
   .about-me {
     display: grid;
@@ -416,6 +432,7 @@ header {
     position: relative;
     z-index: 2;
   }
+
 }
 
 /* Projects */
@@ -465,10 +482,11 @@ header {
 .footer h2 {
   color: var(--clr-light);
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 
 .footer a {
+  padding-top: 2px;
   color: inherit;
   text-decoration: none;
 }
