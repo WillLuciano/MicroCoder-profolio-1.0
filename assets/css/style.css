@@ -16,8 +16,8 @@
 
    --clr-light: #ecfaf0;
    --clr-dark: #30292c;
-   --clr-accent: #26e0ff;
-   --clr-extra: rgba(23, 66, 236, 0.42);
+   --clr-accent: #26c6fa;
+   --clr-extra: #2495fa;
 
    --fs-h1: 3.5rem;
    --fs-h2: 2.5rem;
@@ -47,6 +47,7 @@ section {
 
 img {
   display: block;
+  border-radius: 50%;
   max-width: 100%;
 }
 
@@ -104,7 +105,7 @@ h3 { font-size: var(--fs-h3)}
 
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: var(--clr-accent);
+  background: var(--clr-extra);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
@@ -273,7 +274,6 @@ header {
 }
 
 .intro__img {
-  border-radius: 50%;
   box-shadow: var(--bs);
 }
 
@@ -424,12 +424,13 @@ header {
     left: -1em;
     width: calc(100% + 2em);
     padding-left: 1em;
-    padding-right: calc(200px + 4em);
+    padding-right: 100px;
   }
 
   .about-me__img {
     grid-area: img;
     position: relative;
+    padding-left: 7em;
     z-index: 2;
   }
 
