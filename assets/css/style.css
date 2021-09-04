@@ -352,7 +352,7 @@ header {
 
   .logo h2 {
     padding-left: 4em;
-    font-size: 7em;
+    font-size: 6.5em;
   }
   
   .services {
@@ -381,7 +381,7 @@ header {
 .click {
   display: flex;
   padding-top: 2px;
-  padding-left: 25em;
+  padding-left: 25.5em;
   color: var(--clr-dark);
   text-decoration: none;
   font-size: 1rem;
@@ -395,7 +395,7 @@ header {
 
   .click {
     display: flex;
-    padding-left: 71.5em;
+    padding-left: 55.7em;
     color: var(--clr-dark);
     text-decoration: none;
     font-size: 1em;
